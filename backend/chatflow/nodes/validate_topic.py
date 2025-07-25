@@ -13,7 +13,7 @@ def validate_topic(state):
 
     print(f"🧮 Similarity: {similarity:.4f}")
 
-    if similarity >= 0.85:
+    if similarity >= 0.8:
         if state.get("guide"):
             return {"branch": "chat", "similarity": similarity}
         else:

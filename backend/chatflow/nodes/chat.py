@@ -14,7 +14,7 @@ def chat_node(state):
 
     print(f"🔁 Rechecking similarity in chat_node: {similarity:.4f}")
 
-    if similarity < 0.85:
+    if similarity < 0.8:
         if "response" not in state:
             state["response"] = f"Let's stick to the topic you're learning: '{topic}'. Please ask related questions."
         return state
